@@ -1,19 +1,82 @@
+/* font-family: 'Raleway 400', sans-serif;
+font-family: 'Raleway 400i', sans-serif;
+font-family: 'Raleway 800', sans-serif; */
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: #DEDEDE;
+    background-color: #fcfcfc;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo-container {
     width: 30%;
+    padding-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 25px;
+} 
+
+#logo-container a {
+    color: #000001;
+    text-decoration: none;
+    transition: all ease-in-out .25s;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #000001;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 1.3em;
+    color: #000001;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 1.3em;
+    color: #000001;
+}
+
+h4 {
+    font-weight: 800;
+    color: #000001;
+    font-size: 1.1em;
+}
+
+h5 {
+    color: #000001;
+    font-style: italic;
+}
+
+p {
+    color: #000001;
 }
 
 #logo {
-    /* margin-left: 50px; */
-    width:  100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 } 
 
 #nav {
@@ -21,17 +84,21 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
+    width: 100%;
+    color: #dedede;
+    background-color: #824c71;
+    opacity: 90%;
 }
 
 #nav ul {
     display: flex;
     flex-direction: row;
-    color: #000001;
+    color: #DEDEDE;
 }
 
 nav a {
-    color: #000001;
+    color: #dedede;
     transition: all ease-in-out .25s;
     text-decoration: none;
 }
@@ -40,9 +107,72 @@ nav a:hover {
     color: #90aa86;
 }
 
+.active {
+    color: #9e9e9e;
+    text-decoration: underline;
+}
+
 nav li {
     list-style: none;
-    padding: 3px 30px 3px 30px;
+    padding: 20px 30px 3px 30px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.landing-img {
+    width: 40%;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.landing-img img {
+    width: 100%;
+}
+
+.photo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 50%;
+}
+
+.photo-text h3 {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.photo-text p {
+    width: 80%;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    width: 30%;
+    padding: 15px;
+}
+
+.modal-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-div img {
+    width: 100%;
+    padding: 15px;
 }
 
 .carousel {
@@ -51,13 +181,271 @@ nav li {
     margin-right: auto;
 }
 
+.video-desc {
+    width: 65%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+} 
+
+.video-desc h3 {
+    font-weight: 800;
+}
+
+.video-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 65%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .video-wrapper-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;   
+} */
+
+/* DESIGN SECTION */
+
+.design-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.design-gallery a {
+    transition: all ease-in-out .25s;
+    text-decoration: none;
+    width: 50%;   
+} 
+
+.container {
+   position: relative; 
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #90aa86;
+  }
+  
+.container:hover .overlay {
+    opacity: 1;
+  }
+  
+.text {
+    color: #DEDEDE;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.button {
+    background-color:  #90aa86; /* Green */
+    border: none;
+    color: #DEDEDE;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding-bottom: 15px;
+  }
+  
+  .button1 {
+    background-color: #FCFCFC; 
+    color: black; 
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .button1:hover {
+    background-color:  #90aa86;
+    color: #DEDEDE;
+  }
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #824c71;
+    opacity: 90%;
+    margin-top: 15px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.footer-text h2 {
+    color: #dedede;
+    font-size: 1em;
+}
+
+.icons {
+    font-size: 2em;
+    color: #dedede;
+}
+
+.icons i {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+.icons a {
+    color: #dedede;
+}
+
+.icons a:hover {
+    color: #90aa86;
+    transition: all ease-in-out .25s;
+}
+
 .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 25px;
-    color: #000001;
+    color: #dedede;
+    
 }
+
+/* ---- MODAL SLIDESHOW TEST CSS ---- */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+
 
 
 
@@ -68,6 +456,49 @@ nav li {
     }
 
     .carousel {
+        width: 100%;
+    }
+
+    .video-wrapper {
+        width: 100%;
+    }
+
+    .landing-img {
+        display: none;
+    }
+
+    .photo-text {
+        width: 100%;
+    }
+
+    .photo-text p {
+        width: 90%;
+    }
+
+    .video-desc {
+        width: 90%;
+    }
+
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .photo-gallery img {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* .video-desc {
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    } */
+
+    .container {
         width: 100%;
     }
 }

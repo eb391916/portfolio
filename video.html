@@ -7,39 +7,99 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 
+    <script src="https://kit.fontawesome.com/2f380eab37.js" crossorigin="anonymous"></script>
+
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-      <div id="logo-container"> <!-- open #logo-container -->
-        <a href="index.html">
-        <div>
-          <img id="logo" src="img/alt-logo-v1.svg" class="img-fluid" alt="Eliana Burke Design logo"> </a>
+    <div id="header">
+        <div id="logo-container"> <!-- open #logo-container -->
+          <a href="index.html">
+            <div id="logo"> <!-- open #logo -->
+              <img src="img/logo-v4.svg" class="img-fluid" alt="Eliana Burke Design logo"> 
+            </div>
+            <div class="header-text"> <!-- open .header-text -->
+              <h1>Eliana Burke</h1>
+              <h2>Interactive Designer</h2>
+            </div> <!-- close .header-text -->
+          </a>
+        </div> <!-- close #logo-container -->
+    
+        <nav id="nav"> <!-- open #nav -->
+            <ul>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="video.html" class="active">Video</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav> <!-- close #nav -->
+      </div> <!-- close #header-->
+
+    <div class="video-content"> <!-- .video-content -->
+
+      <div class="landing"> <!-- open .photo-text -->
+        <div class="landing-img"> <!-- open .landing-img -->
+          <img src="img/camera-img.jpg" alt="close-up of an old, rusty fence">
+        </div> <!-- close .landing-img -->
+        <div class="photo-text"> <!-- open .photo-text -->
+          <h3>Video</h3>
+          <p>Most of my video and audio experience comes from taking a multimedia production course. I discovered that although it isn't my passion, I don't mind creating video pieces.</p>
+        </div> <!-- close .photo-text -->
+      </div> <!-- close .landing -->
+
+      <div class="video-wrapper-2">
+        <div class="video-desc">
+          <h3>Disruption</h3>
+          <p>Disruption is a piece I created as a final project in my multimedia production class. It's a story about a retired special education teacher whose property is going to be temporarily destroyed by a natural gas pipeline.</p>
         </div>
-      </div> <!-- close #logo-container -->
+        <div class="embed-responsive embed-responsive-16by9 video-wrapper">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KMJZE_u4LN4" allowfullscreen></iframe>
+        </div>
+      </div>
 
-    <nav id="nav"> <!-- open #nav -->
-         <ul>
-            <li><a href="photography.html">Photography</a></li>
-            <li><a href="design.html">Design</a></li>
-            <li><a href="video.html">Video</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav> <!-- close #nav -->
+      <div class="video-wrapper-2">
+        <div class="video-desc">
+          <h3>A Gift for Life</h3>
+          <p>A Gift for Life is another project from my multimedia production class. It feature Dr. Jeremy Burke, a classical saxophonist and the founder of Playing for Life. Dr. Burke discusses how the program started, and how he uses music as a way to talk about organ donation.</p>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9 video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bJUO7p14p_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
 
-    <div class="video-content"> <!-- .media-content -->
-       
     </div>
 
 
     
       
 
+    <div class="footer-div"> <!-- open .footer-div -->
+      <div class="footer-text">
+        <h2>Interested in getting something designed?</h2> 
+        <h2>I'd love to hear from you!</h2>
+
+      </div>
+
+      <a href="resume/resume-web.pdf" target="_blank">
+        <button class="button button1">Download Resume .pdf</button>
+      </a>
+      
+      <div class="icons"> <!-- open .icons -->
+        <a href="https://www.instagram.com/elianaburkephotography/"><i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.facebook.com/elianaburkedesign/"><i class="fab fa-facebook"></i></a>
+
+        <a href="mailto:elianaburkedesign@gmail.com"><i class="far fa-envelope"></i></a>
+      </div> <!-- close .icons -->
+    
       <div class="copyright"> <!-- open .copyright -->
           Eliana Burke &copy; 2020
       </div> <!-- close .copyright -->
+    </div> <!-- clsoe .footer-div -->
 
 <!-- SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

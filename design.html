@@ -5,6 +5,9 @@
     <title>Eliana Burke Design</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/2f380eab37.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="main.css">
 
     <!-- FONTS -->
@@ -13,31 +16,124 @@
 
 <body>
 
-      <div id="logo-container"> <!-- open #logo-container -->
-        <a href="index.html">
-        <div>
-          <img id="logo" src="img/alt-logo-v1.svg" class="img-fluid" alt="Eliana Burke Design logo"> </a>
-        </div>
-      </div> <!-- close #logo-container -->
-
-    <nav id="nav"> <!-- open #nav -->
-         <ul>
-            <li><a href="photography.html">Photography</a></li>
-            <li><a href="design.html">Design</a></li>
-            <li><a href="video.html">Video</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav> <!-- close #nav -->
+    <div id="header">
+        <div id="logo-container"> <!-- open #logo-container -->
+          <a href="index.html">
+            <div id="logo"> <!-- open #logo -->
+              <img src="img/logo-v4.svg" class="img-fluid" alt="Eliana Burke Design logo"> 
+            </div>
+            <div class="header-text"> <!-- open .header-text -->
+              <h1>Eliana Burke</h1>
+              <h2>Interactive Designer</h2>
+            </div> <!-- close .header-text -->
+          </a>
+        </div> <!-- close #logo-container -->
+    
+        <nav id="nav"> <!-- open #nav -->
+            <ul>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="design.html" class="active">Design</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav> <!-- close #nav -->
+      </div> <!-- close #header-->
 
     <div class="design-content"> <!-- .media-content -->
-       
-    </div>
+      <div class="landing"> <!-- open .photo-text -->
+        <div class="landing-img"> <!-- open .landing-img -->
+          <img src="img/logo-v3.png" alt="close-up of an old, rusty fence">
+        </div> <!-- close .landing-img -->
+        <div class="photo-text"> <!-- open .photo-text -->
+          <h3>Design</h3>
+          <p>I only recently discovered my love for design. I entered college as a biology major, but soon decided that it wasn't the career path for me.</p>
+          <p>After meeting with an advisor, I discovered Ohio University's School of Visual Communication and ended up transferring into their interactive multimedia program.</p> 
+          <p>From there I discovered that my true passion was design. I love working with websites and user experience, posters are so much fun to create, and typography is a topic I love to discuss.</p>
+        </div> <!-- close .photo-text -->
+      </div> <!-- close .landing -->
 
+      <div class="design-gallery"> <!-- open .design-gallery -->
 
+        <a href="thespace.html">
+          <div class="container">
+            <img src="img/design/thespace-coded.png" alt="landing of the spACE website I designed" class="image">
+            <div class="overlay">
+            <div class="text">the spACE Web Design Project</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="goheen.html">
+          <div class="container">
+            <img src="img/design/goheen-sitemap-screenshot.png" alt="website site map" class="image">
+            <div class="overlay">
+              <div class="text">Goheen Site Design</div>
+            </div>
+          </div>
+        </a>
+      
+        <a href="typography.html">
+        <div class="container">
+          <img src="img/design/avenir-poster.png" alt="screenshot of the top half of my typography poster" class="image">
+          <div class="overlay">
+            <div class="text">Typography Projects</div>
+          </div>
+        </div>
+        </a>
+
+        <a href="pfl.html">
+        <div class="container">
+            <img src="img/design/pfl-logo.png" alt="Playing for Life logo" class="image">
+            <div class="overlay">
+              <div class="text">Playing for Life Design</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="coarts.html">
+        <div class="container">
+           <img src="img/design/coarts-news-shot.png" alt="screenshot of the top half of the CoArts Newsletter" class="image">
+              <div class="overlay">
+                <div class="text">Ohio Valley Center for Collaborative Arts Projects</div>
+            </div>
+        </div>
+        </a>
+
+        <a href="council.html">
+        <div class="container">
+            <img src="img/design/council-shot.png" alt="screenshot of the top hall council poster" class="image">
+               <div class="overlay">
+                 <div class="text">Hall Council Posters</div>
+             </div>
+         </div>
+         </a>
+
+      </div> <!-- close .design-gallery -->
+    </div> <!-- close .design-content -->
+
+    <div class="footer-div"> <!-- open .footer-div -->
+      <div class="footer-text">
+        <h2>Interested in getting something designed?</h2> 
+        <h2>I'd love to hear from you!</h2>
+
+      </div>
+
+      <a href="resume/resume-web.pdf" target="_blank">
+        <button class="button button1">Download Resume .pdf</button>
+      </a>
+      
+      <div class="icons"> <!-- open .icons -->
+        <a href="https://www.instagram.com/elianaburkephotography/"><i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.facebook.com/elianaburkedesign/"><i class="fab fa-facebook"></i></a>
+
+        <a href="mailto:elianaburkedesign@gmail.com"><i class="far fa-envelope"></i></a>
+      </div> <!-- close .icons -->
     
       <div class="copyright"> <!-- open .copyright -->
           Eliana Burke &copy; 2020
       </div> <!-- close .copyright -->
+    </div> <!-- clsoe .footer-div -->
 
 <!-- SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
