@@ -117,6 +117,19 @@ nav li {
     padding: 20px 30px 3px 30px;
 }
 
+.about-content {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-buttons2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .landing {
     display: flex;
     flex-direction: row;
@@ -135,6 +148,10 @@ nav li {
     width: 100%;
 }
 
+.type {
+    width: 30%;
+}
+
 .photo-text {
     display: flex;
     flex-direction: column;
@@ -142,6 +159,10 @@ nav li {
     align-items: center;
     margin-top: 15px;
     width: 50%;
+}
+
+.photo-text2 {
+    margin-bottom: 150px;
 }
 
 .photo-text h3 {
@@ -164,13 +185,69 @@ nav li {
     padding: 15px;
 }
 
+#img-a {
+    transform: rotate(180deg);
+}
 
+.back-button {
+    color: #824c71;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
+.back-button p {
+    font-size: 1em;
+    color: #824c71;
+}
+
+.back-button i {
+    font-size: 2em;
+}
+
+.back-button a {
+    color: #824c71;
+    transition: all ease-in-out .25s;
+    text-decoration: none;
+}
+
+.back-button a:hover {
+    color: #90aa86;
+}
+
+.type-slideshow {
+    width: 55%;
+}
+
+.type-slideshow2 {
+    width: 45%;
+}
+
+.type-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.type-gallery {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.type-gallery img {
+    width: 33%;
+}
 
 .carousel {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.carousel-control-prev button {
+    color: #000001;
 }
 
 .video-desc {
@@ -293,9 +370,25 @@ nav li {
     border-radius: 15px;
   }
   
+  .button2 {
+      background-color: #fcfcfc; 
+      color: black;
+      border: 2px solid #824c71;
+      border-radius: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
   .button1:hover {
     background-color:  #90aa86;
     color: #DEDEDE;
+  }
+
+  .button2:hover {
+      background-color: #90aa86;
+      color: #fcfcfc;
+      border: 2px solid #90aa86;
+      
   }
 
 .footer-div {
@@ -342,6 +435,23 @@ nav li {
     transition: all ease-in-out .25s;
 }
 
+.icons2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons2 a {
+    color: #824c71;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
 .copyright {
     display: flex;
     justify-content: center;
@@ -350,93 +460,6 @@ nav li {
     color: #dedede;
     
 }
-
-/* ---- MODAL SLIDESHOW TEST CSS ---- */
-
-.myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-  
-  /* Caption of Modal Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
 
 
 

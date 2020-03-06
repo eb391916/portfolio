@@ -30,13 +30,86 @@
     
         <nav id="nav"> <!-- open #nav -->
             <ul>
+                <li><a href="index.html" class="active">About</a></li>
                 <li><a href="photography.html">Photography</a></li>
                 <li><a href="design.html">Design</a></li>
                 <li><a href="video.html">Video</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav> <!-- close #nav -->
       </div> <!-- close #header-->
+
+
+
+
+
+
+  <div class="landing"> <!-- open .landing -->
+    <div class="landing-img"> <!-- open .landing-img -->
+      <img src="img/media/mirror-portrait.jpg" alt="self-portrait with camera in mirror">
+      
+      <div class="about-buttons1"> <!-- open .about-buttons1 -->
+        <div class="icons icons2"> <!-- open .icons -->
+          <a href="https://www.instagram.com/elianaburkephotography/" target="_blank"><i class="fab fa-instagram"></i></a>
+          
+          <a href="https://www.facebook.com/elianaburkedesign/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+          <a href="mailto:elianaburkedesign@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        </div> <!-- close .icons -->
+
+        <div class="about-buttons2">
+          <a href="design.html">          <button class="button button2">See Design Work</button>
+          </a>
+
+          <a href="photography.html">          <button class="button button2">See Photo Work</button>
+          </a>
+
+          <a href="video.html">          <button class="button button2">See Video Work</button>
+          </a>
+
+          <a href="resume/resume-web.pdf" target="_blank">
+            <button class="button button2">See Resume .pdf</button>
+          </a>
+        </div>
+
+      </div> <!-- close .about-buttons -->
+
+
+
+    </div> <!-- close .landing-img -->
+
+    <div class="photo-text">
+      <h3>Hi, I'm Eliana!</h3>
+
+      <p>I am an interactive multimedia designer with a specialization in marketing. I work with web, user experience, print, and graphic design, as well as photography and video/audio production. </p>
+
+      <p>I began my college career as a biology major, but I soon realized that it wasn’t the right path for me. In Fall of 2018 happened upon design and changed my major. It was the best choice I ever made. In Spring 2019 I began taking design coursework and realized that it was exactly what I was missing. As part of my required coursework the following fall, I took an interactive web design class and discovered what I was supposed to do with my life. </p>
+      
+      <p>I love designing posters and advertising materials, but websites are my true passion. I love the process of creating a website more than anything else. From the initial research and sitemapping, to the final designs and code, I lose track of time because I enjoy it so much!</p>
+
+      <p>I also do a lot of design work outside of the classroom. I work with Project C, a multimedia organization at Ohio University that works with nonprofits in the Athens County and surrounding areas to increase their multimedia presence. We most often work with websites, social media advice, poster design and photography.</p>
+      
+      <p>I am a media and design intern at the Ohio Valley Center for Collaborative Arts (CoArts), which is part of Ohio University's College of Fine Arts. I independently created a storytelling protocol for working with their partners, designed their soon-to-be-released email newsletter, and many other miscellaneous designs for their programs.</p>
+
+      <p>I am also in charge of the design work for my dad's outreach program called Playing for Life, and independently created the logo and program designs for his events.</p> 
+      </div> <!-- close .photo-text -->
+    </div> <!-- close .landing -->
+
+  <div class="about-content"> <!-- open .about-content -->
+  
+    
+    
+  </div> <!-- close .about-content -->
+          
+         
+
+
+
+          
+  
+
+
+
+
 
 
    
@@ -69,6 +142,29 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
 
 </body>
 </html>
