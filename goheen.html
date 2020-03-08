@@ -48,40 +48,54 @@
   <div class="landing"> <!-- open .landing -->
     
     <div class="landing-img type"> <!-- open .landing-img -->
-      <img src="img/design/typography/letterform.jpg" alt="close-up of the bottom of a Georgia E">
+      <img src="img/design/goheen/goheen-landing.png" alt="the spACE logo">
     </div> <!-- close .landing-img -->
 
     <div class="photo-text photo-text2">
-      <h3>Typography</h3>
-      <p>I have always liked experimenting with different typefaces. As I have learned more about type, I have gained an even greater appreciation for it. I really enjoy playing with the different letterforms and user testing the responses my friends have to different fonts. Below are two projects from a typography course that I especially enjoy. One was an assignment where we had to create faces out of letterforms and the other was a research project on a particular type family.</p>    
+      <h3>Goheen Site Design</h3>
+      <p>Over the course of my first web design class, we learned about the individual parts of designing a website. We spent a lot of time learning how to make high resolution personas, sitemaps, wireframes, prototypes, etc. There wasn't any code involved with this site. For this project, I have included the personas, sitemap, user flow diagram, and the wireframe.</p>    
     </div>
 </div>
 
 <div class="video-desc">
-    <h3>Type Poster</h3>
+    <h3>Personas</h3>
     <p></p>
 </div>
 
-<div class="photo-gallery type-gallery">
-    <img src="img/design/typography/type-poster-v1.jpg" alt="version 1 of type poster">
+<div class="photo-gallery type-gallery space-gallery1">
+    <img src="img/design/goheen/goheen-persona1.jpg" alt="goheen site persona">
 
-    <img src="img/design/typography/type-poster-v2.jpg" alt="version 2 of type poster">
-
-    <img src="img/design/typography/type-poster-v3.jpg" alt="version 3 of type poster">
+    <img src="img/design/goheen/goheen-persona2.jpg" alt="goheen site persona">
 </div>
 
 <div class="video-desc">
-        <h3>Type Faces</h3>
-        <p></p>
-    </div>
-    
-    <div class="photo-gallery type-gallery">
-        <img src="img/design/typography/face1.jpg" alt="version 1 of type poster">
-    
-        <img src="img/design/typography/face2.jpg" alt="version 2 of type poster">
-    
-        <img src="img/design/typography/face3.jpg" alt="version 3 of type poster">
-    </div>
+    <h3>Sitemap & User Flow</h3>
+    <p></p>
+</div>
+
+<div class="photo-gallery type-gallery goheen-gallery">
+    <img src="img/design/goheen/goheen-sitemap1.jpg" alt="goheen site sitemap">
+
+    <img src="img/design/goheen/goheen-sitemap2.jpg" alt="goheen site sitemap">
+
+    <img src="img/design/goheen/userflow_goheensite.jpg" alt="goheen site user flow diagram">
+        
+</div> <!-- close .space-gallery2 -->
+
+
+<div class="video-desc">
+    <h3>Wireframe</h3>
+    <p></p>
+</div>
+
+<div class="photo-gallery type-gallery goheen-gallery">
+  <img src="img/design/goheen/goheen-wireframe.png" alt="screenshot of the goheen site wireframe">    
+</div> <!-- close .goheen-gallery -->
+
+<div class="about-buttons2">
+  <a href="img/design/goheen/goheen-wireframe.xd" target="_blank">          <button class="button button2">Wireframe XD File</button>
+  </a>
+</div>
 
 
 
@@ -115,29 +129,29 @@
 
    
 
-    <div class="footer-div"> <!-- open .footer-div -->
+<div class="footer-div"> <!-- open .footer-div -->
       <div class="footer-text">
         <h2>Interested in getting something designed?</h2> 
         <h2>I'd love to hear from you!</h2>
 
-      </div>
+    </div>
 
       <a href="resume/resume-web.pdf" target="_blank">
         <button class="button button1">Download Resume .pdf</button>
       </a>
       
-      <div class="icons"> <!-- open .icons -->
+    <div class="icons"> <!-- open .icons -->
         <a href="https://www.instagram.com/elianaburkephotography/"><i class="fab fa-instagram"></i></a>
         
         <a href="https://www.facebook.com/elianaburkedesign/"><i class="fab fa-facebook"></i></a>
 
         <a href="mailto:elianaburkedesign@gmail.com"><i class="far fa-envelope"></i></a>
-      </div> <!-- close .icons -->
+    </div> <!-- close .icons -->
     
-      <div class="copyright"> <!-- open .copyright -->
+    <div class="copyright"> <!-- open .copyright -->
           Eliana Burke &copy; 2020
-      </div> <!-- close .copyright -->
-    </div> <!-- clsoe .footer-div -->
+    </div> <!-- close .copyright -->
+</div> <!-- clsoe .footer-div -->
 
 <!-- SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -164,8 +178,51 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
-
 </script>
+
+<script>
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+  
 
 </body>
 </html>

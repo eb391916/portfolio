@@ -248,6 +248,22 @@ nav li {
     width: 25%;
 }
 
+.space-gallery3 a {
+    width: 50%;
+}
+
+.space-gallery3 img {
+    width: 100%;
+}
+
+.goheen-gallery {
+    width: 70%;
+}
+
+.goheen-gallery img {
+    width: 100%;
+}
+
 .carousel {
     width: 60%;
     margin-left: auto;
@@ -296,6 +312,12 @@ nav li {
     padding-left: 30px;
     padding-right: 30px;   
 } */
+
+
+
+
+
+
 
 /* DESIGN SECTION */
 
@@ -502,6 +524,10 @@ nav li {
         width: 90%;
     }
 
+    .design-gallery a {
+        width: 100%;
+    }
+
     .photo-gallery {
         display: flex;
         flex-wrap: wrap;
@@ -512,6 +538,10 @@ nav li {
     .photo-gallery img {
         width: 100%;
         padding: 15px;
+    }
+
+    .goheen-gallery {
+        width: 100%;
     }
 
     /* .video-desc {
