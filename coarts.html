@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Eliana Burke Design</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://kit.fontawesome.com/2f380eab37.js" crossorigin="anonymous"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo-container"> <!-- open #logo-container -->
+          <a href="index.html">
+            <div id="logo"> <!-- open #logo -->
+              <img src="img/logo-v4.svg" class="img-fluid" alt="Eliana Burke Design logo"> 
+            </div>
+            <div class="header-text"> <!-- open .header-text -->
+              <h1>Eliana Burke</h1>
+              <h2>Interactive Designer</h2>
+            </div> <!-- close .header-text -->
+          </a>
+        </div> <!-- close #logo-container -->
+    
+        <nav id="nav"> <!-- open #nav -->
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="design.html" class="active">Design</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav> <!-- close #nav -->
+      </div> <!-- close #header-->
+
+
+
+      <div class="back-button">
+          <a href="design.html"><i class="fas fa-arrow-left"></i><p>Back to Design</p></a>
+      </div>
+    
+
+  <div class="landing"> <!-- open .landing -->
+    
+    <div class="landing-img type"> <!-- open .landing-img -->
+      <img src="img/design/typography/letterform.jpg" alt="close-up of the bottom of a Georgia E">
+    </div> <!-- close .landing-img -->
+
+    <div class="photo-text photo-text2">
+      <h3>Typography</h3>
+      <p>I have always liked experimenting with different typefaces. As I have learned more about type, I have gained an even greater appreciation for it. I really enjoy playing with the different letterforms and user testing the responses my friends have to different fonts. Below are two projects from a typography course that I especially enjoy. One was an assignment where we had to create faces out of letterforms and the other was a research project on a particular type family.</p>    
+    </div>
+</div>
+
+<div class="video-desc">
+    <h3>Type Poster</h3>
+    <p></p>
+</div>
+
+<div class="photo-gallery type-gallery">
+    <img src="img/design/typography/type-poster-v1.jpg" alt="version 1 of type poster">
+
+    <img src="img/design/typography/type-poster-v2.jpg" alt="version 2 of type poster">
+
+    <img src="img/design/typography/type-poster-v3.jpg" alt="version 3 of type poster">
+</div>
+
+<div class="video-desc">
+        <h3>Type Faces</h3>
+        <p></p>
+    </div>
+    
+    <div class="photo-gallery type-gallery">
+        <img src="img/design/typography/face1.jpg" alt="version 1 of type poster">
+    
+        <img src="img/design/typography/face2.jpg" alt="version 2 of type poster">
+    
+        <img src="img/design/typography/face3.jpg" alt="version 3 of type poster">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    <div class="footer-div"> <!-- open .footer-div -->
+      <div class="footer-text">
+        <h2>Interested in getting something designed?</h2> 
+        <h2>I'd love to hear from you!</h2>
+
+      </div>
+
+      <a href="resume/resume-web.pdf" target="_blank">
+        <button class="button button1">Download Resume .pdf</button>
+      </a>
+      
+      <div class="icons"> <!-- open .icons -->
+        <a href="https://www.instagram.com/elianaburkephotography/"><i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.facebook.com/elianaburkedesign/"><i class="fab fa-facebook"></i></a>
+
+        <a href="mailto:elianaburkedesign@gmail.com"><i class="far fa-envelope"></i></a>
+      </div> <!-- close .icons -->
+    
+      <div class="copyright"> <!-- open .copyright -->
+          Eliana Burke &copy; 2020
+      </div> <!-- close .copyright -->
+    </div> <!-- clsoe .footer-div -->
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

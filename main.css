@@ -240,6 +240,14 @@ nav li {
     width: 33%;
 }
 
+.space-gallery1 img {
+    width: 50%;
+}
+
+.space-gallery2 img {
+    width: 25%;
+}
+
 .carousel {
     width: 60%;
     margin-left: auto;
