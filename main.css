@@ -130,6 +130,13 @@ nav li {
     align-items: center;
 }
 
+.about-buttons4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .landing {
     display: flex;
     flex-direction: row;
@@ -138,7 +145,24 @@ nav li {
 
 }
 
+.landing2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .landing-img {
+    width: 40%;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.landing-img2 img {
+    width: 100%;
+}
+
+.landing-img2 {
     width: 40%;
     padding: 15px;
     margin-top: 15px;
@@ -508,7 +532,25 @@ nav li {
         width: 100%;
     }
 
+    .landing2 {
+        display: flex;
+        flex-direction: column;   
+        flex-wrap: wrap; 
+    }
+
     .landing-img {
+        display: none;
+    }
+
+    .landing-img2 {
+        width: 100%;
+    }
+
+    .about-buttons1 {
+        display: none;
+    }
+
+    .about-buttons2 {
         display: none;
     }
 
@@ -553,5 +595,15 @@ nav li {
 
     .container {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .about-buttons3 {
+        display: none;
+    }
+
+    .about-buttons4 {
+        display: none;
     }
 }
